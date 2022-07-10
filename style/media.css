@@ -1,0 +1,301 @@
+@media screen and (max-width: 1000px) {
+  main.sovet div h1,
+  main.sovet div p { font-size: .9em; }
+}
+@media screen and (max-width: 926px) {
+    main.units > .unit {
+        grid-template-columns: 35% 45% 20%;
+    }
+    main.units > .unit > .price form button { 
+        width: 150px;
+    }
+    main.units > .unit img {
+        margin: auto 0;
+    }
+    main.sovet div h1,
+    main.sovet div p { font-size: .7em; }
+    main.index .all-2 div:first-child p {
+      margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 760px) {
+  main.index .hoz div:first-child,
+  main.index .all-2 div:first-child,
+  main.index .hoz-2 div:first-child,
+  main.index .all { width: 100%; }
+  main.index .hoz,
+  main.index .all-2,
+  main.index .hoz-2 { padding-top: 0; }
+}
+@media screen and (max-width: 720px) {
+    main.units > .unit > .price form button { 
+        width: 100px;
+        font-size: .9em;
+    }
+    main.units > .unit > .txt p { 
+        width: 100%;
+        margin: 0;
+        font-size: .9em;
+    }
+    main.units > .unit-2 {
+        grid-template-columns: 25% 45% 20%;
+    }
+    main.units > .unit-2 .price form button {
+        width: 125px;
+    }
+}
+@media screen and (max-width: 700px) {
+  main.hata .ingo > .viber {
+    width: 100%;
+  }
+  main.sovet { width: 100%; }
+  main.sovet div h1,
+  main.sovet div p { font-size: .6em; }
+}
+@media screen and (max-width: 605px) {
+  main.index .hoz div:first-child,
+  main.index .all-2 div:first-child,
+  main.index .hoz-2 div:first-child,
+  main.index .all { grid-template-columns: 100%;}
+  
+  main.index .hoz-2 div:first-child img,
+  main.index .all-2 div img {
+    grid-row: 2;
+  }
+  .q, 
+  main.index .hoz-2 div h3,
+  main.index .hoz div h3 {
+    padding: 25px 0;
+  }
+  .block { display: none; }
+}
+@media screen and (max-width: 600px) {
+  main.contacts {
+    grid-template-columns: 100%;
+    width: 100%;
+  } 
+  main.contacts > div:first-child h1 {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background-color: white;
+  }
+  main.contacts > div:first-child p {
+    padding-bottom: 20px;
+  }
+  main.contacts > div:first-child {
+    background-color: rgba(196, 196, 196, 0.5);
+  }
+  ul { 
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 570px) {
+    main.units > .unit-2 {
+        grid-template-columns: 50% 50%;
+    }
+    main.units > .unit-2 .price {
+        display: flex;
+        grid-column: 2 span;
+        align-items: center;
+    }
+    main.units > .unit-2 .price h1,
+    main.units > .unit-2 .price > form {
+        width: 50%;
+    }
+    main.units > .unit-2 .price > form > button {
+        width: 100%;
+    }
+    .none { display: none; }
+}
+@media screen and (max-width: 550px) {
+  /* как в макете */
+  /* main.hata {
+    width: 96%;
+    margin: 0 auto;
+  }
+  main.hata > .photos {
+    grid-template-columns: 100%;
+  }
+  main.hata > .photos > img:first-child,
+  main.hata > .photos > img { grid-column: 1 span; }
+  main.hata > .ingo h1,
+  main.hata > .ingo h3,
+  main.hata > .ingo p {
+    font-size: .9em;
+  }
+  main.hata > .spisok { grid-column: 10 span; } */
+
+  main.hata {
+    width: 96%;
+    margin: 0 auto;
+    display: block;
+  }
+  main.hata > .ingo .viber { margin-top: 10px; }
+  .ingo,
+  .spisok,
+  .photos, 
+  .all-two { margin: 15px auto;}
+}
+@media screen and (max-width: 500px) {
+    footer.footer .fot {
+      margin: 0 auto;
+      grid-gap: 10px;
+      padding: 15px 0;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 100%;
+          grid-template-columns: 100%;
+    }
+    footer.footer .fot .fot3 {
+      text-align: left;
+    }
+    footer.footer .fot .fot3 img {
+      width: 20px;
+      margin-left: 20px;
+    }
+    .header {
+      position: relative;
+      height: 60px;
+      -webkit-box-pack: inherit;
+          -ms-flex-pack: inherit;
+              justify-content: inherit;
+      -webkit-box-align: inherit;
+          -ms-flex-align: inherit;
+              align-items: inherit;
+      padding-top: 20px;
+      z-index: 5000;
+    }
+    body.index header { 
+      padding-top: 0;
+    }
+    .header img {
+      position: absolute;
+      left: 40%;
+    }
+    .header nav {
+      -webkit-box-align: inherit;
+          -ms-flex-align: inherit;
+              align-items: inherit;
+      width: 60%;
+      height: 1000px;
+      background-color: #c09e72;
+      color: white;
+      -webkit-clip-path: circle(24px at 32px 24px);
+              clip-path: circle(24px at 32px 24px);
+      transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    }
+    .header nav .dws-menu {
+      display: block;
+    }
+    .header nav .dws-menu li a {
+      display: block;
+      line-height: 50px;
+      padding: 0 20px;
+      color: white;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+    }
+    .header nav:hover {
+      -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+      -webkit-transition-duration: 0.75s;
+              transition-duration: 0.75s;
+      -webkit-clip-path: circle(770px at 150px 24px);
+              clip-path: circle(770px at 150px 24px);
+    }
+    .navicon {
+      padding: 23px 20px;
+      cursor: pointer;
+      -webkit-transform-origin: 32px 24px;
+              transform-origin: 32px 24px;
+    }
+    .navicon div {
+      position: relative;
+      width: 20px;
+      height: 2px;
+      background: white;
+    }
+    a:hover {
+      background: #ffe082;
+    }
+    a:active {
+      background: #ffca28;
+    }
+    .navicon div:before {
+      top: -7px;
+    }
+    .navicon div:after {
+      top: 7px;
+    }
+    .navicon div:before,
+    .navicon div:after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: white;
+      position: absolute;
+    }
+    main.index .list1 .loftcity {
+      left: calc(50% - 100px);
+      top: 45%;
+    }
+
+    main.units .unit:nth-child(3) { background-image: url(../image/u1.png); }
+    main.units .unit:nth-child(4) { background-image: url(../image/u2.png); }
+    main.units .unit:nth-child(5) { background-image: url(../image/u3.png); }
+
+    main.units .unit:nth-child(3),
+    main.units .unit:nth-child(4),
+    main.units .unit:nth-child(5) { box-shadow: 0px -100px 100px -32px rgba(0, 0, 0, 0.71) inset; }
+
+    main.units > .unit {
+        grid-template-columns: 75% 25%;
+        grid-column: 2/12;
+        padding-top: 40%;
+        padding-bottom: 5px;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    main.units > .unit:hover {
+      background-position: 50%;
+    }
+    main.units > .unit > .txt { border: 0; }    
+    main.units > .unit p,
+    main.units > .unit h1,
+    main.units > .unit h3,
+    main.units > .unit button {
+        color: white;
+    }
+   .none { display: none; }
+
+   main.sovet div h1,
+   main.sovet div p { font-size: .4em; }
+}
+@media screen and (max-width: 450px) {
+    main.units > .unit-2 {
+        grid-template-columns: 100%;
+        grid-gap: 5px;
+    } 
+    main.units > .unit-2 .price {
+        grid-column: 1;
+    }
+    main.units > .unit-2 .price {
+        display: block;
+        text-align: center;
+        grid-column: 1 span;
+        align-items: center;
+    }
+    main.units > .unit-2 .price h1,
+    main.units > .unit-2 .price > form {
+        width: auto;
+    }
+    main.units > .unit-2 .price > form > button {
+        width: 200px;
+        margin: 0;
+    }
+}
